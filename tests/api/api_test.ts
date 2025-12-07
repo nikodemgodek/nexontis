@@ -1,6 +1,7 @@
-Feature('API Testing');
-
 import { assert } from 'chai';
+
+
+Feature('API Testing');
 
 interface User {
   id: number;

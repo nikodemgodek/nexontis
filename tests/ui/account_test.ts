@@ -1,7 +1,8 @@
-Feature('UI Testing');
 import { LoginPage } from "../../pages/LoginPage";
 import { ProductsPage } from "../../pages/ProductsPage";
 import { CartPage } from "../../pages/CartPage";
+
+Feature('UI Testing');
 
 Scenario('Scenario 1: login, add items, remove third item, checkout',  ({ I }) => {
 

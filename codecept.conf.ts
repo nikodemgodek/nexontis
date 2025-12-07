@@ -15,7 +15,8 @@ export const config: CodeceptJS.MainConfig = {
     Playwright: {
       browser: 'chromium',
       url: process.env.BASE_URL,
-      show: true
+      show: true,
+      windowSize: '1200x900',
     },
     REST: {
       endpoint: process.env.API_BASE_URL,
@@ -38,6 +39,17 @@ export const config: CodeceptJS.MainConfig = {
     require: "allure-codeceptjs",
     outputDir: "allure-results",
     },
+  },
+  multiple: {
+    chromium: {
+      browsers: ['chromium'],
+    },
+    firefox: {
+      browsers: ['firefox'],
+    },
+    webkit: {
+      browsers: ['webkit'],
+    }
   },
   name: 'nexontis'
 }
