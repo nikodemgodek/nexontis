@@ -55,7 +55,7 @@ It is configured to run tests in headless mode or with UI, and integrates with A
 
     API_BASE_URL=https://reqres.in/api
     API_KEY=<<your_api_key>>
-    (optional) API_TIMEOUT=5000
+    API_TIMEOUT=5000
     ```
 
 
