@@ -33,13 +33,31 @@ It is configured to run tests in headless mode or with UI, and integrates with A
 ## Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/nikodemgodek/nexontis.git
+    git clone https://github.com/your-username/codeceptjs-tests.git
     cd codeceptjs-tests
     ```
 2. Install dependencies:
     ```bash
     npm install
     ```
+3. Don't forget to create `.env` file with sensitive data in general directory:
+    ```bash
+    BASE_URL=https://saucedemo.com
+    
+    STANDARD_USER=standard_user
+    STANDARD_USER_PASS=<<secret_password>>
+
+    PROBLEM_USER=problem_user
+    PROBLEM_USER_PASS=<<secret_password>>
+
+    LOCKED_USER=locked_out_user
+    LOCKED_USER_PASS=<<secret_password>>
+
+    API_BASE_URL=https://reqres.in/api
+    API_KEY=<<your_api_key>>
+    (optional) API_TIMEOUT=5000
+    ```
+
 
 ---
 
@@ -54,11 +72,6 @@ This project includes ready-to-use npm scripts in `package.json`.
     ```bash
     npm run codeceptjs:headless
     ```
-- Run tests in multiple browsers:
-    ```bash
-    npm run codeceptjs run-multiple firefox chromium webkit
-    ```
-
 ---
 
 ## Demo and UI
