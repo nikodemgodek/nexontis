@@ -1,4 +1,4 @@
-# CodeceptJS Tests
+# Saucedemo UI & API Tests
 
 > End-to-end test project built with [CodeceptJS](https://codecept.io/), using Playwright, TypeScript, and Allure for reporting.
 
