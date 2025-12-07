@@ -90,6 +90,10 @@ Generate and serve the report:
 
 ---
 
+## Test Execution
+![Test](images/allure-report-dashboard.PNG)
+![Test](images/allure-report-collapse-ui-api-tests.PNG)
+
 ## Contact
 This project is intended for educational and demonstration purposes.  
 Questions or suggestions? Reach out via [linkedin](https://linked.in/in/nikodemgodek).
