@@ -75,7 +75,7 @@ This project includes ready-to-use npm scripts in `package.json`.
     ```
 - Run tests in multiple browsers: Firefox, Chromium, Webkit
     ```bash
-    npx codeceptjs run-multiple firefox, chromium, webkit
+    npx codeceptjs run-multiple firefox chromium webkit
 
     ```
 ---
