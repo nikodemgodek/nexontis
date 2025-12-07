@@ -9,14 +9,22 @@ setHeadlessWhen(process.env.HEADLESS);
 setCommonPlugins();
 
 export const config: CodeceptJS.MainConfig = {
-  tests: './*_test.ts',
+  tests: './tests/*/*_test.ts',
   output: './output',
   helpers: {
     Playwright: {
       browser: 'chromium',
       url: process.env.BASE_URL,
       show: true
-    }
+    },
+    REST: {
+      endpoint: process.env.API_BASE_URL,
+      defaultHeaders: {
+        'Content-Type': 'application/json',
+        'x-api-key': process.env.API_KEY
+      },
+      timeout: process.env.API_TIMEOUT ? parseInt(process.env.API_TIMEOUT) : 3000
+    },
   },
   include: {
     I: './steps_file'

@@ -1,7 +1,7 @@
 Feature('account');
-import { LoginPage } from "./pages/LoginPage";
-import { ProductsPage } from "./pages/ProductsPage";
-import { CartPage } from "./pages/CartPage";
+import { LoginPage } from "../../pages/LoginPage";
+import { ProductsPage } from "../../pages/ProductsPage";
+import { CartPage } from "../../pages/CartPage";
 
 Scenario('Scenario 1: login, add items, remove third item, checkout',  ({ I }) => {
 
