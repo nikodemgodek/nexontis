@@ -54,6 +54,10 @@ This project includes ready-to-use npm scripts in `package.json`.
     ```bash
     npm run codeceptjs:headless
     ```
+- Run tests in multiple browsers:
+    ```bash
+    npm run codeceptjs run-multiple firefox chromium webkit
+    ```
 
 ---
 
