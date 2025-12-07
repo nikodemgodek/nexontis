@@ -33,8 +33,8 @@ It is configured to run tests in headless mode or with UI, and integrates with A
 ## Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/codeceptjs-tests.git
-    cd codeceptjs-tests
+    git clone https://github.com/nikodemgodek/nexontis.git
+    cd nexontis
     ```
 2. Install dependencies:
     ```bash
@@ -99,17 +99,9 @@ You can also run example tests and the UI demo:
 ## Test Reporting
 This project supports Allure reporting:
 
-1. Install Allure CLI:
+1. Generate and serve the report:
     ```bash
-    npm install -g allure-commandline
-    ```
-2. Run tests with Allure plugin:
-    ```bash
-    npx codeceptjs run --plugins allure
-    ```
-3. Generate and serve the report:
-    ```bash
-    allure serve output
+    allure serve ./allure-results
     ```
 
 ---
