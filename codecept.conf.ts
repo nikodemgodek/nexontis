@@ -32,7 +32,12 @@ export const config: CodeceptJS.MainConfig = {
   plugins: {
     htmlReporter: {
       enabled: true
-    }
+    },
+    allure: {
+    enabled: true,
+    require: "allure-codeceptjs",
+    outputDir: "allure-results",
+    },
   },
   name: 'nexontis'
 }

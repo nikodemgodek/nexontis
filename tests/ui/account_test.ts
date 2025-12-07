@@ -1,4 +1,4 @@
-Feature('account');
+Feature('UI Testing');
 import { LoginPage } from "../../pages/LoginPage";
 import { ProductsPage } from "../../pages/ProductsPage";
 import { CartPage } from "../../pages/CartPage";
