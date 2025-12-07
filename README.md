@@ -70,36 +70,20 @@ This project includes ready-to-use npm scripts in `package.json`.
     ```
 - Run tests in headless mode (no browser UI):
     ```bash
-    npm run codeceptjs:headless
-    ```
----
+    npx codeceptjs run --steps --override '{ "helpers": { "Playwright": { "show": false } } }'
 
-## Demo and UI
-You can also run example tests and the UI demo:
+    ```
+- Run tests in multiple browsers: Firefox, Chromium, Webkit
+    ```bash
+    npx codeceptjs run-multiple firefox, chromium, webkit
 
-- Run demo tests:
-    ```bash
-    npm run codeceptjs:demo
     ```
-- Run demo tests in headless mode:
-    ```bash
-    npm run codeceptjs:demo:headless
-    ```
-- Open interactive test UI:
-    ```bash
-    npm run codeceptjs:ui
-    ```
-- Demo UI:
-    ```bash
-    npm run codeceptjs:demo:ui
-    ```
-
 ---
 
 ## Test Reporting
 This project supports Allure reporting:
 
-1. Generate and serve the report:
+Generate and serve the report:
     ```bash
     allure serve ./allure-results
     ```
