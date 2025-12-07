@@ -33,7 +33,7 @@ It is configured to run tests in headless mode or with UI, and integrates with A
 ## Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/codeceptjs-tests.git
+    git clone https://github.com/nikodemgodek/codeceptjs-tests.git
     cd codeceptjs-tests
     ```
 2. Install dependencies:
